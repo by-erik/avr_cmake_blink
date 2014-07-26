@@ -1,16 +1,27 @@
-### Build
+# avr_cmake_blink
+
+This is a little "Hello, world"-blink example/template for avr-gcc with cmake and avrdude.
+
+## Requirements
+
+        apt-get update
+        apt-get install avr-libc avrdude cmake make
+
+        adduser ${USER} dialout
+
+## Build
 
         mkdir build
         cd build
         cmake -DCMAKE_TOOLCHAIN_FILE=../toolchain-gcc-avr.cmake ..
         make
 
-### Install
+## Install
 
         cd build
         make upload_main
 
-### Eclipse
+## Eclipse
 
 * File -> New -> Makefile Project with Existing Source
     * Existing Code Location -> Browse... -> avr\_cmake\_blink

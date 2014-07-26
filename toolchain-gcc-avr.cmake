@@ -15,7 +15,7 @@ SET(AVRDUDE_MCU        "m328p")
 SET(CMCU 		"-mmcu=atmega328p")
 SET(CDEFS 		"-DF_CPU=16000000 -D__AVR_ATmega328P__")
 
-SET(CSTANDARD	"-std=gnu99")
+SET(CSTANDARD		"-std=gnu99")
 SET(CDEBUG		"-gstabs")
 SET(CWARN		"-Wall  -Wstrict-prototypes")
 SET(CTUNING		"-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
@@ -23,7 +23,7 @@ SET(CTUNING		"-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
 SET(COPT		"-O2")
 
 SET(CFLAGS		"${CMCU} ${CDEFS} ${COPT} ${SDEBUG} ${CWARN} ${CSTANDARD}")
-SET(CXXFLAGS	"${CMCU} ${CDEFS} ${COPT}")
+SET(CXXFLAGS		"${CMCU} ${CDEFS} ${COPT}")
 
 SET(CMAKE_C_FLAGS   ${CFLAGS})
 SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
